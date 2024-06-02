@@ -17,7 +17,7 @@ body {
     max-width: 1200px;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .product {
@@ -27,6 +27,7 @@ body {
     background-color: #fff;
     max-width: 200px;
     text-align: center;
+    padding: 10px;
     transition: transform 0.2s;
   }
   
@@ -39,15 +40,17 @@ body {
     height: auto;
   }
   
-  .product h3 {
+  .product .title {
     font-size: 16px;
-    margin: 10px;
+    margin: 10px 0;
     color: #333;
   }
   
-  .product hr {
-    margin: 0;
-    border: none;
-    border-top: 1px solid #ddd;
+  .product .price,
+  .product .category,
+  .product .id {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
   }
   
