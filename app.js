@@ -1,21 +1,27 @@
-axios("https://fakestoreapi.com/products/1")
-  .then((res) => {
-    console.log(res.data);
-  })
-  .catch((res) => {
-    console.log(res);
-  });
+// const div = document.querySelector("div");
 
-// axios("https://fakestoreapi.com/products")
+// axios("https://fakestoreapi.com/products/1")
 //   .then((res) => {
 //     console.log(res.data);
 //     res.data.map((item) => {
-//       div.innerHTML += `<h3>${item.title}</h3>
-//     <img width = "150" src= "${item.image}"/>
-//     <hr>
-//     `;
+//       div.innerHTML += "<h2>tital: ${tiem.tital}</h2>";
+//       ("<h2>tital: ${tiem.price}</h2>");
 //     });
 //   })
-//   .catch((err) => {
-//     console.log(err);
+//   .catch((res) => {
+//     console.log(res);
 //   });
+const div = document.querySelector("div");
+axios("https://fakestoreapi.com/products")
+  .then((res) => {
+    console.log(res.data);
+    res.data.map((item) => {
+      div.innerHTML += `<h3>${item.title}</h3>
+    <img width = "150" src= "${item.image}"/>
+    <hr>
+    `;
+    });
+  })
+  .catch((err) => {
+    console.log(err);
+  });
